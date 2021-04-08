@@ -77,7 +77,7 @@ h1{
   }
   
   nav.globalMenuSp ul {
-	background: #ccc;
+	background: #487591;
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
@@ -94,12 +94,12 @@ h1{
 	border-bottom: none;
   }
   nav.globalMenuSp ul li:hover{
-	background :#ddd;
+	background :#625DA1;
   }
   
   nav.globalMenuSp ul li a {
 	display: block;
-	color: #625DA1;
+	color: #4DD7E3;
 	padding: 1.4em 0;
 	text-decoration :none;
   }
@@ -108,7 +108,3 @@ h1{
   nav.globalMenuSp.active {
 	transform: translateX(0%);
   }
-  
-#487591
-#4DD7E3
-#625DA1
