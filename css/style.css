@@ -1,11 +1,11 @@
-﻿.header{
+﻿.Header{
 	height: 10%;
 	text-align: center;
 	padding-top: 10px;
 }
 
 h1{
-	font-size: 5vh;
+	font-size: 5vw;
 	color: #487591;
 	background: -webkit-linear-gradient(30deg, #487591,#625DA1 30%,#4DD7E3);
 	-webkit-background-clip: text;
@@ -15,7 +15,7 @@ h1{
 
 
 /*　ハンバーガーボタン　*/
-.hamburger {
+.Hamburger {
 	display : block;
 	position: fixed;
 	z-index : 3;
@@ -25,7 +25,7 @@ h1{
 	cursor: pointer;
 	text-align: center;
   }
-  .hamburger span {
+  .Hamburger span {
 	display : block;
 	position: absolute;
 	width   : 30px;
@@ -36,34 +36,33 @@ h1{
 	-moz-transition   : 0.3s ease-in-out;
 	transition        : 0.3s ease-in-out;
   }
-  .hamburger span:nth-child(1) {
+  .Hamburger span:nth-child(1) {
 	top: 10px;
   }
-  .hamburger span:nth-child(2) {
+  .Hamburger span:nth-child(2) {
 	top: 20px;
   }
-  .hamburger span:nth-child(3) {
+  .Hamburger span:nth-child(3) {
 	top: 30px;
   }
   
-  /* ナビ開いてる時のボタン */
-  .hamburger.active span:nth-child(1),
-  .hamburger.active span:nth-child(3) {
+  .Hamburger.active span:nth-child(1),
+  .Hamburger.active span:nth-child(3) {
 	width : 14px;
   }
-  .hamburger.active span:nth-child(1){
+  .Hamburger.active span:nth-child(1){
   
 	-webkit-transform:    translate(17px,5px) rotate(45deg);
 	-moz-transform   : translate(17px,5px) rotate(45deg);
 	transform        : translate(17px,5px) rotate(45deg);
   }
-  .hamburger.active span:nth-child(3){
+  .Hamburger.active span:nth-child(3){
    
 	-webkit-transform: translate(17px,-5px) rotate(-45deg);
 	-moz-transform   : translate(17px,-5px) rotate(-45deg);
 	transform        : translate(17px,-5px) rotate(-45deg);
   }
-  nav.globalMenuSp {
+  nav.Menu {
 	position: fixed;
 	z-index : 2;
 	left : 0;
@@ -75,35 +74,49 @@ h1{
 	width: 100%;
   }
   
-  nav.globalMenuSp ul {
+  nav.Menu ul {
 	background: #487591;
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
   }
   
-  nav.globalMenuSp ul li {
+  nav.Menu ul li {
 	list-style-type: none;
 	padding: 0;
 	width: 100%;
 	border-bottom: 1px solid #fff;
   }
-  nav.globalMenuSp ul li:last-child {
+  nav.Menu ul li:last-child {
 	padding-bottom: 0;
 	border-bottom: none;
   }
-  nav.globalMenuSp ul li:hover{
+  nav.Menu ul li:hover{
 	background :#625DA1;
   }
   
-  nav.globalMenuSp ul li a {
+  nav.Menu ul li a {
 	display: block;
 	color: #4DD7E3;
 	padding: 1.4em 0;
 	text-decoration :none;
   }
   
-  /* このクラスを、jQueryで付与・削除する */
-  nav.globalMenuSp.active {
+  nav.Menu.active {
 	transform: translateX(0%);
   }
+
+  main{
+	  padding-top: 250px;
+	  text-align: center;
+  }
+
+  .Valz_img img{
+	  border-radius: 50%;
+	  width: 30%;
+  }
+
+  .Movie_icon{
+	  width: 20%;
+  }
+

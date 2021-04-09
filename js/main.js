@@ -1,11 +1,11 @@
 $(function() {
-    $('.hamburger').click(function() {
+    $('.Hamburger').click(function() {
         $(this).toggleClass('active');
  
         if ($(this).hasClass('active')) {
-            $('.globalMenuSp').addClass('active');
+            $('.Menu').addClass('active');
         } else {
-            $('.globalMenuSp').removeClass('active');
+            $('.Menu').removeClass('active');
         }
     });
 });
