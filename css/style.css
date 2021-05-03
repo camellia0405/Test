@@ -19,13 +19,14 @@ h1{
 	display : block;
 	position: fixed;
 	z-index : 3;
-	left : 13px;
+	right : 13px;
+	top: 20px;
 	width : 42px;
 	height: 42px;
 	cursor: pointer;
 	text-align: center;
-  }
-  .Hamburger span {
+}
+.Hamburger span {
 	display : block;
 	position: absolute;
 	width   : 30px;
@@ -35,32 +36,36 @@ h1{
 	-webkit-transition: 0.3s ease-in-out;
 	-moz-transition   : 0.3s ease-in-out;
 	transition        : 0.3s ease-in-out;
-  }
-  .Hamburger span:nth-child(1) {
+}
+
+.Hamburger span:nth-child(1) {
 	top: 10px;
-  }
-  .Hamburger span:nth-child(2) {
+}
+
+.Hamburger span:nth-child(2) {
 	top: 20px;
-  }
-  .Hamburger span:nth-child(3) {
+}
+
+.Hamburger span:nth-child(3) {
 	top: 30px;
-  }
-  
-  .Hamburger.active span:nth-child(1),
-  .Hamburger.active span:nth-child(3) {
+}
+
+.Hamburger.active span:nth-child(1),
+.Hamburger.active span:nth-child(3) {
 	width : 14px;
-  }
-  .Hamburger.active span:nth-child(1){
-  
-	-webkit-transform:    translate(17px,5px) rotate(45deg);
-	-moz-transform   : translate(17px,5px) rotate(45deg);
-	transform        : translate(17px,5px) rotate(45deg);
-  }
+}
+
+.Hamburger.active span:nth-child(1){
+
+	-webkit-transform:    translate(-1px,5px) rotate(-45deg);
+	-moz-transform   : translate(-1px,5px) rotate(-45deg);
+	transform        : translate(-1px,5px) rotate(-45deg);
+}
   .Hamburger.active span:nth-child(3){
    
-	-webkit-transform: translate(17px,-5px) rotate(-45deg);
-	-moz-transform   : translate(17px,-5px) rotate(-45deg);
-	transform        : translate(17px,-5px) rotate(-45deg);
+	-webkit-transform: translate(-1px,-5px) rotate(45deg);
+	-moz-transform   : translate(-1px,-5px) rotate(45deg);
+	transform        : translate(-1px,-5px) rotate(45deg);
   }
   nav.Menu {
 	position: fixed;
@@ -84,7 +89,8 @@ h1{
   nav.Menu ul li {
 	list-style-type: none;
 	padding: 0;
-	width: 100%;
+	height: 80px;
+	line-height: 5px;
 	border-bottom: 1px solid #fff;
   }
   nav.Menu ul li:last-child {
@@ -101,22 +107,24 @@ h1{
 	padding: 1.4em 0;
 	text-decoration :none;
   }
-  
-  nav.Menu.active {
+
+
+nav.Menu.active {
 	transform: translateX(0%);
-  }
+}
 
-  main{
-	  padding-top: 250px;
-	  text-align: center;
-  }
+main{
+	padding-top: 250px;
+	text-align: center;
+}
 
-  .Valz_img img{
-	  border-radius: 50%;
-	  width: 30%;
-  }
+.Valz_img img{
+	border-radius: 50%;
+	width: 30%;
+}
 
   .Movie_icon{
 	  width: 20%;
+	  cursor: pointer;
   }
 
