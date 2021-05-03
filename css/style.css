@@ -12,7 +12,10 @@ h1{
 	-webkit-text-fill-color: transparent;
 }
 
-
+p{
+	font-size: max(20px 1vw);
+	margin: 0 auto;
+}
 
 /*　ハンバーガーボタン　*/
 .Hamburger {
@@ -89,8 +92,6 @@ h1{
   nav.Menu ul li {
 	list-style-type: none;
 	padding: 0;
-	height: 80px;
-	line-height: 5px;
 	border-bottom: 1px solid #fff;
   }
   nav.Menu ul li:last-child {
@@ -107,7 +108,6 @@ h1{
 	padding: 1.4em 0;
 	text-decoration :none;
   }
-
 
 nav.Menu.active {
 	transform: translateX(0%);
